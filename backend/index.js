@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./config/db.Js");
+// const connectDB = require("./config/db.Js");
 const authRoute= require('./routes/authRoutes')
 const laptopRoutes = require("./routes/laptopRoutes");
 const employeeRoutes = require("./routes/employRoutes");
@@ -12,6 +12,19 @@ const requestRoute= require('./routes/requestRoutes')
 const app = express();
 
 require("dotenv").config();
+
+const mongoose = require("mongoose");
+
+
+const connectDB = async()=>{
+    try{
+        await mongoose.connect(process.env.MONGO_URI);
+        console.log("MongoDB Connected");
+    }catch(error){
+       console.error("mongoDB connection failed ", error.message);
+       process.exit(1);
+    }
+}
 
 // Middleware
 app.use(express.json());
