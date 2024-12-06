@@ -1,5 +1,5 @@
 const Employee = require("../models/Employee");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const Assignment = require("../models/Assignment");
 
 exports.addEmployee = async (req, res) => {
