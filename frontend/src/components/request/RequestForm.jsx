@@ -1,5 +1,5 @@
 import React from "react";
-import './RequestForm.css'; // Import the CSS file
+import './requestForm.css'; // Import the CSS file
 
 const RequestForm = ({ requestText, setRequestText, onSubmit }) => {
   return (

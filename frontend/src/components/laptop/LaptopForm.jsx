@@ -1,5 +1,5 @@
 import React from "react";
-import './LaptopForm.css'; // Import the CSS file
+import './laptopForm.css'; // Import the CSS file
 
 const LaptopForm = ({ formData, setFormData, onSubmit }) => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import './OverviewCard.css'; // Import the CSS file
+import './overviewCard.css'; // Import the CSS file
 
 const OverviewCard = ({ label, value, bgColor }) => {
   return (

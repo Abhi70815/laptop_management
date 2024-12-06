@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import './LaptopDetails.css'; // Import the CSS file
+import './laptopDetails.css'; // Import the CSS file
 
 const LaptopDetails = ({ laptop, fetchAssignedLaptop }) => {
   
