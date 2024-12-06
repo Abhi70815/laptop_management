@@ -1,0 +1,43 @@
+.request-list {
+    margin-bottom: 16px; /* Margin below the list */
+  }
+  
+  .request-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+  }
+  
+  .request-table th,
+  .request-table td {
+    padding: 8px; /* Padding inside cells */
+    border: 1px solid #ccc; /* Light gray border */
+  }
+  
+  .request-table th {
+    background-color: #f0f0f0; /* Light gray background for header */
+  }
+  
+  .request-button {
+    padding: 4px 12px; /* Padding inside the button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition */
+  }
+  
+  .request-button.approve {
+    background-color: #48bb78; /* Green background */
+  }
+  
+  .request-button.approve:hover {
+    background-color: #38a169; /* Darker green on hover */
+  }
+  
+  .request-button.reject {
+    background-color: #f56565; /* Red background */
+  }
+  
+  .request-button.reject:hover {
+    background-color: #e53e3e; /* Darker red on hover */
+  }

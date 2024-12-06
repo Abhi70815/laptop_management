@@ -1,0 +1,30 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    padding: 12px;
+    border: 1px solid #ccc; /* Light gray border */
+  }
+  
+  .table thead {
+    background-color: #f7f7f7; /* Light gray background for header */
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+  }
+  
+  .button {
+    padding: 8px 12px;
+    color: white;
+    background-color: #dc3545; /* Red background */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }

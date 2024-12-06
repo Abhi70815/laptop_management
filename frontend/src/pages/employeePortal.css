@@ -1,0 +1,55 @@
+.employee-portal {
+    padding: 24px; /* Padding for the portal */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Font size for the main heading */
+    margin-bottom: 24px; /* Margin below the heading */
+  }
+  
+  h2 {
+    font-size: 1.5rem; /* Font size for subheadings */
+    margin-top: 24px; /* Margin above subheadings */
+    margin-bottom: 16px; /* Margin below subheadings */
+  }
+  
+  .request-form {
+    margin-bottom: 24px; /* Margin below the request form */
+  }
+  
+  .laptop-details {
+    margin-bottom: 24px; /* Margin below the laptop details */
+  }
+  
+  .button {
+    padding: 10px 20px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .button-blue {
+    background-color: #007bff; /* Blue background */
+  }
+  
+  .button-blue:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .button-green {
+    background-color: #28a745; /* Green background */
+  }
+  
+  .button-green:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .button-red {
+    background-color: #dc3545; /* Red background */
+  }
+  
+  .button-red:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }

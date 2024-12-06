@@ -1,0 +1,27 @@
+.request-form {
+    margin-bottom: 24px; /* Margin below the form */
+  }
+  
+  .request-textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside the textarea */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .request-button {
+    width: 100%; /* Full width */
+    padding: 12px; /* Padding inside the button */
+    margin-top: 8px; /* Margin above the button */
+    color: white; /* White text */
+    background-color: darkslategray; /* Blue background */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.2s; /* Smooth transition */
+  }
+  
+  .request-button:hover {
+    background-color: rgba(47, 79, 79, 0.87); /* Darker blue on hover */
+  }

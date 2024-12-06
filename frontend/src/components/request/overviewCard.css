@@ -1,0 +1,16 @@
+.overview-card {
+    padding: 16px; /* Padding for the card */
+    text-align: center; /* Center text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    background-color: #ebf8ff; /* Default light blue background */
+  }
+  
+  .overview-card h2 {
+    font-size: 1.25rem; /* Text size for label */
+    font-weight: bold; /* Bold text for label */
+  }
+  
+  .overview-card p {
+    font-size: 1.5rem; /* Text size for value */
+  }

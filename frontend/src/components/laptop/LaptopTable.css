@@ -1,0 +1,58 @@
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header {
+    background-color: #f7fafc; /* Light gray background */
+  }
+  
+  .table-header th {
+    padding: 8px;
+    border: 1px solid #e2e8f0; /* Light gray border */
+  }
+  
+  .table-row {
+    transition: background-color 0.2s;
+  }
+  
+  .table-row:hover {
+    background-color: #f9fafb; /* Slightly darker gray on hover */
+  }
+  
+  .table-cell {
+    padding: 8px;
+    border: 1px solid #e2e8f0; /* Light gray border */
+  }
+  
+  .button {
+    padding: 8px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button-edit {
+    background-color: #4299e1; /* Blue background */
+  }
+  
+  .button-edit:hover {
+    background-color: #3182ce; /* Darker blue on hover */
+  }
+  
+  .button-remove {
+    background-color: #f56565; /* Red background */
+  }
+  
+  .button-remove:hover {
+    background-color: #c53030; /* Darker red on hover */
+  }
+  
+  .button-view {
+    background-color: #4299e1; /* Blue background */
+  }
+  
+  .button-view:hover {
+    background-color: #3182ce; /* Darker blue on hover */
+  }
