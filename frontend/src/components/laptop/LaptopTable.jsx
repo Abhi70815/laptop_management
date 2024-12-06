@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './laptopTable.css'; // Import the CSS file
+import './LaptopTable.css'; // Import the CSS file
 import IssueModal from "../issue/IssueModel";
 
 const LaptopTable = ({ laptops, onEdit, onRemove }) => {
