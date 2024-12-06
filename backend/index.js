@@ -35,7 +35,7 @@ app.use(cors());
 connectDB();
 
 // Test Route
-app.get("/", (req, res) => res.send("API is running..."));
+app.get("/", (req, res) => res.send("API running..."));
 
 app.use("/api/users", authRoute);
 app.use("/api/admin", adminRoutes);
