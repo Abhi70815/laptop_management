@@ -1,5 +1,5 @@
 import React from "react";
-import './IssueForm.css'; // Import the CSS file
+import './issueForm.css'; // Import the CSS file
 
 const IssueForm = ({ issue, setIssue, onSubmit }) => {
   return (

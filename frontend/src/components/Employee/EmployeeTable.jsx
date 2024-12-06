@@ -1,5 +1,5 @@
 import React from "react";
-import './EmployeeTable.css'; // Import the CSS file
+import './employeeTable.css'; // Import the CSS file
 
 const EmployeeTable = ({ employees, onRemove }) => {
   return (

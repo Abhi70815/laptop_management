@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import './CreateIssue.css'; // Import the CSS file
+import './createIssue.css'; // Import the CSS file
 
 const CreateIssue = () => {
   const navigate = useNavigate();

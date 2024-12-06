@@ -1,5 +1,5 @@
 import React from "react";
-import './EmployeeForm.css'; // Import the CSS file
+import './employeeForm.css'; // Import the CSS file
 
 const EmployeeForm = ({ formData, setFormData, onSubmit }) => {
   return (
