@@ -14,7 +14,7 @@ const Login = () => {
 
   useEffect(() => {
     // Corrected toast messages
-    toast.info(" Admin:-  Admin@gmail.com, Password: 1234");
+    toast.info(" Admin:-  admin@gmail.com, Password: 1234");
     toast.info(" Guest:-  Email: Guest@gmail.com, Password: 1234");
   }, []);
 
