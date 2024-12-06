@@ -16,7 +16,7 @@ const CreateIssue = () => {
   useEffect(() => {
     const fetchLaptops = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/laptops", {
+        const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/laptops", {
           headers: { token: localStorage.getItem("token") },
         });
         setLaptops(res.data);
@@ -36,7 +36,7 @@ const CreateIssue = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/issues", issue, {
+      await axios.post("https://laptop-management-backend-tjrg.onrender.com/api/issues", issue, {
         headers: { token: localStorage.getItem('token') }
       });
       alert("Issue created successfully!");

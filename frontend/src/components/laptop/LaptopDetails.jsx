@@ -10,7 +10,7 @@ const LaptopDetails = ({ laptop, fetchAssignedLaptop }) => {
 
   const handleUnAssigned = async (id) => {
     await axios.delete(
-      `http://localhost:5000/api/assignments/${id}`,
+      `https://laptop-management-backend-tjrg.onrender.com/api/assignments/${id}`,
       { headers: { token: localStorage.getItem("token") } }
     );
     fetchAssignedLaptop();

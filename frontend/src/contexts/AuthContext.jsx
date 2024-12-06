@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchLaptops = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/laptops", {
+      const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/laptops", {
         headers: { token: localStorage.getItem("token") },
       });
       setLaptops(res.data);
@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchIssues = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/issues", {
+      const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/issues", {
         headers: { token: localStorage.getItem("token") },
       });
       setIssues(res.data);

@@ -19,7 +19,7 @@ const EmployeePortal = () => {
 
   const fetchAssignedLaptop = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/assignments", {
+      const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/assignments", {
         headers: { token: localStorage.getItem("token") },
       });
       if (res.data.length > 0) {
@@ -41,7 +41,7 @@ const EmployeePortal = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/requests",
+        "https://laptop-management-backend-tjrg.onrender.com/api/requests",
         {
           employeeId,
           reason: laptopRequest,
@@ -59,7 +59,7 @@ const EmployeePortal = () => {
   const handleReportIssue = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/issues", issue, {
+      await axios.post("https://laptop-management-backend-tjrg.onrender.com/api/issues", issue, {
         headers: { token: localStorage.getItem("token") },
       });
       alert("Issue reported.");

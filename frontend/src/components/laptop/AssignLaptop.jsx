@@ -15,7 +15,7 @@ const AssignLaptop = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/employees", {
+        const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/employees", {
           headers: { token: localStorage.getItem("token") },
         });
         setEmployees(res.data);
@@ -30,7 +30,7 @@ const AssignLaptop = () => {
 
   const fetchLaptops = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/laptops", {
+      const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/laptops", {
         headers: { token: localStorage.getItem("token") },
       });
       setLaptops(res.data.filter((laptop) => laptop.status === "available"));
@@ -47,7 +47,7 @@ const AssignLaptop = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/assignments", assignment, {
+      await axios.post("https://laptop-management-backend-tjrg.onrender.com/api/assignments", assignment, {
         headers: { token: localStorage.getItem("token") },
       });
       fetchLaptops();

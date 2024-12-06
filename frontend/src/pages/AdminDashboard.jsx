@@ -27,19 +27,19 @@ const AdminDashboard = () => {
     }, []);
 
     const fetchStats = async () => {
-        const res = await axios.get("http://localhost:5000/api/admin/stats");
+        const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/admin/stats");
         setStats(res.data);
     };
 
     const fetchLaptops = async () => {
-        const res = await axios.get("http://localhost:5000/api/laptops/", {
+        const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/laptops/", {
             headers: { token: localStorage.getItem("token") },
         });
         setLaptops(res.data);
     };
 
     const fetchEmployees = async () => {
-        const res = await axios.get("http://localhost:5000/api/employees", {
+        const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/employees", {
             headers: { token: localStorage.getItem("token") },
         });
         setEmployees(res.data);
@@ -47,7 +47,7 @@ const AdminDashboard = () => {
 
     const handleRemoveEmployee = async (id) => {
         if (window.confirm("Are you sure you want to remove this employee?")) {
-            await axios.delete(`http://localhost:5000/api/employees/${id}`, {
+            await axios.delete(`https://laptop-management-backend-tjrg.onrender.com/api/employees/${id}`, {
                 headers: { token: localStorage.getItem("token") },
             });
             fetchEmployees();
@@ -60,7 +60,7 @@ const AdminDashboard = () => {
 
     const handleRemove = async (id) => {
         if (window.confirm("Are you sure you want to delete this laptop?")) {
-            await axios.delete(`http://localhost:5000/api/laptops/${id}`, {
+            await axios.delete(`https://laptop-management-backend-tjrg.onrender.com/api/laptops/${id}`, {
                 headers: { token: localStorage.getItem("token") },
             });
             fetchLaptops();
@@ -69,7 +69,7 @@ const AdminDashboard = () => {
 
     const handleSave = async () => {
         await axios.put(
-            `http://localhost:5000/api/laptops/${editLaptop._id}`,
+            `https://laptop-management-backend-tjrg.onrender.com/api/laptops/${editLaptop._id}`,
             editLaptop, { headers: { token: localStorage.getItem('token') } }
         );
         setEditLaptop(null);

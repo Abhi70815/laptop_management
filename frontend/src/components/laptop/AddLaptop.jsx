@@ -22,7 +22,7 @@ const AddLaptop = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/laptops", laptop, {
+      await axios.post("https://laptop-management-backend-tjrg.onrender.com/api/laptops", laptop, {
         headers: { token: localStorage.getItem("token") },
       });
       fetchLaptops();

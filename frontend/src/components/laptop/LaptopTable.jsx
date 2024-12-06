@@ -10,7 +10,7 @@ const LaptopTable = ({ laptops, onEdit, onRemove }) => {
   const fetchIssues = async (laptopId) => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/issues/${laptopId}`,{headers:{token:localStorage.getItem('token')}}
+        `https://laptop-management-backend-tjrg.onrender.com/api/issues/${laptopId}`,{headers:{token:localStorage.getItem('token')}}
       );
       setIssues(res.data);
       setShowModal(true);

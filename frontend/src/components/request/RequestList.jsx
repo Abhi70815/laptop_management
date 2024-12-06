@@ -8,7 +8,7 @@ const RequestList = () => {
 
   const fetchRequests = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/requests", { headers: { token: localStorage.getItem("token") } });
+      const res = await axios.get("https://laptop-management-backend-tjrg.onrender.com/api/requests", { headers: { token: localStorage.getItem("token") } });
       setRequests(res.data);
     } catch (error) {
       console.error("Error fetching requests:", error);
@@ -21,7 +21,7 @@ const RequestList = () => {
   const updateRequestStatus = async (requestId, status) => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/requests/${requestId}`,
+        `https://laptop-management-backend-tjrg.onrender.com/api/requests/${requestId}`,
         { status }, { headers: { token: localStorage.getItem('token') } }
       );
       alert(res.data.message);

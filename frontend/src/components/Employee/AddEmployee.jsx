@@ -20,7 +20,7 @@ const AddEmployee = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/employees", employee, {
+      await axios.post("https://laptop-management-backend-tjrg.onrender.com/api/employees", employee, {
         headers: { token: localStorage.getItem('token') },
       });
       alert("Employee added successfully!");
