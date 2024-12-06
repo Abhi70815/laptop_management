@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./config/db.JS");
+const connectDB = require("./config/db.Js");
 const authRoute= require('./routes/authRoutes')
 const laptopRoutes = require("./routes/laptopRoutes");
 const employeeRoutes = require("./routes/employRoutes");
